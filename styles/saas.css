@@ -1,0 +1,131 @@
+/* ========== ESTILOS SAAS COMPILADOS ==========  */
+
+#saas h2 {
+  color: #be0991;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+#saas > p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+#saas .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  height: 100%;
+}
+
+#saas .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#saas .card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#saas .card .card-body i {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+/* Colores específicos para cada icono (SaaS) */
+#saas .card .card-body i.fa-shopping-cart {
+  color: #dc3545;
+}
+
+#saas .card .card-body i.fa-palette {
+  color: #0ea5e9;
+}
+
+#saas .card .card-body i.fa-image {
+  color: #f59e0b;
+}
+
+#saas .card .card-body i.fa-code {
+  color: #10b981;
+}
+
+#saas .card .card-body .card-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #be0991;
+  margin: 1rem 0;
+}
+
+#saas .card .card-body .card-text {
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#saas .card .card-body .btn {
+  background-color: #be0991;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  transition: background-color 0.3s;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+#saas .card .card-body .btn:hover {
+  background-color: #9a076e;
+  color: white;
+}
+
+/* ========== RESPONSIVE ========== */
+
+@media (max-width: 768px) {
+  #saas h2 {
+    font-size: 1.8rem;
+  }
+
+  #saas .card .card-body {
+    padding: 1.5rem 1rem;
+  }
+
+  #saas .card .card-body i {
+    font-size: 2.5rem;
+  }
+
+  #saas .card .card-body .card-title {
+    font-size: 1.1rem;
+  }
+
+  #saas .card .card-body .card-text {
+    font-size: 0.9rem;
+  }
+
+  #saas .card .card-body .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #saas h2 {
+    font-size: 1.5rem;
+  }
+
+  #saas .card .card-body i {
+    font-size: 2rem;
+  }
+
+  #saas .card .card-body .card-title {
+    font-size: 1rem;
+  }
+
+  #saas .card .card-body .card-text {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "studio-minoa",
+  "version": "1.0.0",
+  "description": "Sitio web Studio Minoa",
+  "main": "index.html",
+  "scripts": {
+    "sass": "sass styles/saas.scss styles/saas.css",
+    "watch": "sass --watch styles:styles"
+  },
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
