@@ -1,0 +1,13 @@
+// ========== VARIABLES ==========
+$primary-color: #be0991;
+$secondary-color: #dc3545;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+$transition-speed: 0.3s;
+$border-radius: 10px;
+$spacing-base: 1rem;
+
+// Colores para cada SaaS
+$saas-colors: (
+  envio: #dc3545,
+  pago: #10b981
+);

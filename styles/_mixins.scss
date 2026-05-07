@@ -1,0 +1,31 @@
+// ========== MIXINS ==========
+
+// Mixin para tarjetas con hover
+@mixin card-hover {
+  transition: transform $transition-speed, box-shadow $transition-speed;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+}
+
+// Mixin para iconos
+@mixin icon-style($size: 3rem, $color: $primary-color) {
+  font-size: $size;
+  color: $color;
+  margin-bottom: $spacing-base;
+}
+
+// Mixin para botones
+@mixin button-style($bg-color: $primary-color) {
+  background-color: $bg-color;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+  transition: background-color $transition-speed;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}

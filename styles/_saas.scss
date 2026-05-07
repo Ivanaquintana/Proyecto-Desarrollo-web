@@ -1,0 +1,132 @@
+// ========== ESTILOS - SECCIÓN SAAS ==========
+
+#saas {
+  // Título principal
+  h2 {
+    color: $primary-color;
+    font-weight: bold;
+    margin-bottom: $spacing-base;
+  }
+
+  // Párrafo descriptivo
+  & > p {
+    color: #666;
+    font-size: 1.1rem;
+  }
+
+  // Tarjetas
+  .card {
+    @include card-hover;
+    border: none;
+    box-shadow: $card-shadow;
+    border-radius: $border-radius;
+    height: 100%;
+
+    // Contenido de tarjeta
+    .card-body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      // Icono dentro de la tarjeta
+      i {
+        @include icon-style(3rem);
+
+        // Colores específicos por tipo de SaaS
+        &.fa-shopping-cart {
+          color: map-get($saas-colors, envio);
+        }
+
+        &.fa-code {
+          color: map-get($saas-colors, pago);
+        }
+      }
+
+      // Título de tarjeta
+      .card-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: $primary-color;
+        margin: $spacing-base 0;
+      }
+
+      // Texto descriptivo
+      .card-text {
+        font-size: 0.95rem;
+        color: #555;
+        text-align: center;
+        margin-bottom: $spacing-base;
+      }
+
+      // Botón dentro de tarjeta
+      .btn {
+        @include button-style($primary-color);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+
+        &:hover {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// ========== RESPONSIVE ==========
+
+@media (max-width: 768px) {
+  #saas {
+    h2 {
+      font-size: 1.8rem;
+    }
+
+    .card {
+      .card-body {
+        padding: 1.5rem 1rem;
+
+        i {
+          @include icon-style(2.5rem);
+        }
+
+        .card-title {
+          font-size: 1.1rem;
+        }
+
+        .card-text {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  #saas {
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    .card {
+      .card-body {
+        i {
+          @include icon-style(2rem);
+        }
+
+        .card-title {
+          font-size: 1rem;
+        }
+
+        .card-text {
+          font-size: 0.85rem;
+        }
+
+        .btn {
+          padding: 0.4rem 0.8rem;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
